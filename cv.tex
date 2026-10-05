@@ -1,0 +1,280 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+    filecolor=cyan,
+    urlcolor=cyan,
+    citecolor=cyan
+}
+
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{needspace}
+
+
+% -------------------- FONT OPTIONS --------------------
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Machine readable/ATS parsable: XeTeX embeds Unicode text by default
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Evens out the space above each section heading (values calibrated against the PDF)
+\newcommand{\sectiongap}[1]{\vspace{#1}\vskip0pt}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  \color{gray}
+  \item
+\end{flushright}
+
+\vspace{-5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Ashwin Baduni} \\ \vspace{7pt}
+    \small
+    \faIcon{linkedin}
+    \href{https://www.linkedin.com/in/ashwinbaduni/}{{LinkedIn}}
+    $  $  $  $
+    \faIcon{user-circle}
+    \href{https://ashwin-baduni.github.io/}{{Portfolio}}
+    $  $  $  $
+    \faIcon{github}
+    \href{https://github.com/Ashwin-Baduni}{{GitHub}}
+    $  $  $  $
+    \faIcon{envelope}
+    {{baduniashwin@gmail.com}}
+
+\end{center}
+
+% -------------------- EXPERIENCE --------------------
+\sectiongap{-9.0pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{MihawkAI}$ $ $ $\href{https://mihawk.ai}{\footnotesize\faIcon{link}}
+      $|$ \footnotesize\emph{Co-founder}\vspace{-2pt}}{July 2025 -- Present}
+      {\small{
+      \resumeItemListStart
+        \resumeItem{Part of the founding team deciding what we build next, working across both \newline the AI underneath our products and the experience people see on top.}
+        \resumeItem{Train models that make sense of what cameras see and build agents people can simply talk to, then design the products around them so they feel effortless to use.}
+      \resumeItemListEnd
+      }}
+
+    \resumeProjectHeading
+      {\textbf{National Informatics Centre}$ $ $ $\href{https://www.nic.in}{\footnotesize\faIcon{link}}
+      $|$ \footnotesize\emph{AI Software Intern}\vspace{-2pt}}{Jan 2025 -- April 2025}
+      {\small{
+      \resumeItemListStart
+        \resumeItem{Built an AI chatbot for vehicle registration support using NLP and real-time analytics.}
+        \resumeItem{Scaled the FastAPI backend and added CAPTCHA protection and interactive visualizations.}
+      \resumeItemListEnd
+      }}
+
+    \resumeProjectHeading
+      {\textbf{Gurugram Metropolitan Development Authority}$ $ $ $\href{https://www.gmda.gov.in/?language=en}{\footnotesize\faIcon{link}}
+      $|$ \footnotesize\emph{Full-Stack Intern}\vspace{-2pt}}{June 2022 -- Aug 2022}
+      {\small{
+      \resumeItemListStart
+        \resumeItem{Made the internal dashboard responsive and accessible with Bootstrap and JavaScript.}
+        \resumeItem{Worked with the backend team to streamline data workflows and cut manual input.}
+      \resumeItemListEnd
+      }}
+
+  \resumeSubHeadingListEnd
+
+% -------------------- PROJECTS --------------------
+\sectiongap{-8.6pt}
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{AI Powered Analytics Dashboard Chatbot}$ $ $ $\href{https://github.com/Ashwin-Baduni/AI-powered-analytics-dashboard-chatbot-2025}{\footnotesize\faIcon{link}}
+\vspace{-2pt}}{Jan -- Apr 2025}
+{\small{
+\resumeItemListStart
+        \resumeItem{Lets anyone ask a dataset questions in plain English and get back SQL and charts, \newline served by quantized LLMs behind a FastAPI service.}
+        \resumeItem{Reads CSV, Excel and JSON files and streams answers to an interactive dashboard.}
+      \resumeItemListEnd
+}}
+
+\resumeProjectHeading
+{\textbf{Video Motion Amplification and Vibration Analysis} \small{(SIH 2023 Winner)}$ $ $ $\href{https://github.com/Ashwin-Baduni/video-based-motion-amplification-and-vibration-analysis-SIH-2023}{\footnotesize\faIcon{link}}
+\vspace{-2pt}}{Dec 2023}
+{\small{
+\resumeItemListStart
+        \resumeItem{Measures machine vibration from ordinary video using Eulerian video magnification \newline and frequency analysis, so equipment can be checked for faults without fitting sensors.}
+        \resumeItem{Won the Ministry of Defence problem statement at Smart India Hackathon 2023 \newline (50,000+ ideas from 44,000+ teams).}
+      \resumeItemListEnd
+}}
+
+\resumeSubHeadingListEnd
+
+% -------------------- CERTIFICATIONS --------------------
+\sectiongap{-7.0pt}
+\section{Certifications}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+    {\textbf{Google Cybersecurity Professional Certificate}$ $
+    \href{https://www.coursera.org/account/accomplishments/professional-cert/certificate/DXRLYIKE4D2T}{\footnotesize\faIcon{link}}
+    $|$ \footnotesize\emph{Credential ID: DXRLYIKE4D2T}\vspace{2pt}}{2025}
+
+    \resumeProjectHeading
+    {\textbf{IBM Data Analyst Professional Certificate}$ $
+    \href{https://www.coursera.org/account/accomplishments/professional-cert/certificate/9WRKVKV2DUIH}{\footnotesize\faIcon{link}}
+    $|$ \footnotesize\emph{Credential ID: 9WRKVKV2DUIH}\vspace{2pt}}{2025}
+
+    \resumeProjectHeading
+    {\textbf{IRM Enterprise Risk Management - Level 1}$ $
+    \href{https://www.theirmindia.org/}{\footnotesize\faIcon{link}}
+    $|$ \footnotesize\emph{Credential ID: IRMIN/L1CIM/2023/00000000000675}\vspace{2pt}}{2023}
+
+  \resumeSubHeadingListEnd
+
+% -------------------- ACHIEVEMENTS --------------------
+\sectiongap{-2.9pt}
+\section{Achievements}
+  \resumeSubHeadingListStart
+
+         \resumeProjectHeading
+          {\textbf{Smart India Hackathon}$ $ $ $\href{https://sih.gov.in/sih2023-grand-finale-result}{\footnotesize\faIcon{link}}
+          $|$ \footnotesize\emph{Winner, Ministry of Defence problem statement}\vspace{2pt}}{2023}
+
+          \resumeProjectHeading
+          {\textbf{Indian International Model United Nations}$ $ $ $\href{https://www.iimun.in/}{\footnotesize\faIcon{link}}
+          $|$ \footnotesize\emph{High Commendation}\vspace{2pt}}{2017}
+
+          \resumeProjectHeading
+          {\textbf{Scindia School Model United Nations}$ $ $ $\href{https://www.scindia.edu/}{\footnotesize\faIcon{link}}
+          $|$ \footnotesize\emph{Special Mention}\vspace{2pt}}{2016}
+
+    \resumeSubHeadingListEnd
+
+\clearpage
+\vspace*{5pt}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Mahindra University$ $ $ $\href{https://www.mahindrauniversity.edu.in/}{\footnotesize\faIcon{link}}}
+      {Oct 2021 -- Aug 2025} {B.Tech in Computational Mathematics}{}
+
+  \resumeSubHeadingListEnd
+
+% -------------------- TECHNICAL SKILLS --------------------
+\sectiongap{-2.0pt}
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Languages:} Python, TypeScript, JavaScript, C/C++, Java, SQL \\[2pt]
+        \textbf{AI/ML Frameworks:} PyTorch, TensorFlow, LangChain, OpenCV, CUDA, Triton Inference Server, vLLM \\[2pt]
+        \textbf{Deep Learning:} CNNs, LSTMs, Transformers, Attention Mechanisms, Seq2Seq, Beam Search, CTC Loss \\[2pt]
+        \textbf{Agentic \& LLM Systems:} Multi-Agent Pipelines, Quantized LLMs, RAG, Intent Routing, Tool Orchestration \\[2pt]
+        \textbf{Computer Vision:} Real-time Object Detection and Tracking (YOLO), Re-identification, OCR, Optical Flow, Eulerian Video Magnification, FFT Analysis \\[2pt]
+        \textbf{Backend \& Infrastructure:} FastAPI, Flask, Node.js, PostgreSQL, Elasticsearch, React, Docker, Git, Linux, AWS
+    }}
+\end{itemize}
+
+% -------------------- EXTRACURRICULAR --------------------
+\sectiongap{-9.0pt}
+\section{Extracurricular Activities}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+          {\textbf{Mahindra University Student Council} $|$ \footnotesize\emph{Finance Representative}\vspace{8pt}}{}
+          {\small{Managed budgeting and financial reporting for student-led initiatives.}}
+
+\resumeProjectHeading
+          {\textbf{Mahindra University Maths Society} $|$ \footnotesize\emph{Member}\vspace{8pt}}{}
+          {\small{Helped organise mathematics workshops and competitions on campus.}}
+
+\resumeSubHeadingListEnd
+
+\end{document}
